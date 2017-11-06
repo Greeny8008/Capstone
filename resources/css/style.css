@@ -15,7 +15,7 @@ display: block;
 }
 
 a {
-  color: black;
+  color: blue;
   text-decoration: none;
 }
 
@@ -56,9 +56,13 @@ span {
 }
 
 
-.banner img {
+.banner-img {
   width: 60%;
   padding: 2rem 1.5rem;
+}
+
+.banner img {
+  width: 100%;
 }
 
 .btn {
@@ -67,6 +71,35 @@ span {
    color: white;
 }
 
-.tagline {
+/*First Content Block*/
 
+.section-one {
+  display: flex;
+  width: 100%;
+}
+
+/*Main-feature - within First block*/
+
+.main-feature {
+  width: 60%;
+}
+
+.main-feature img {
+  width: 100%;
+}
+
+/* Side Content - within First block*/
+
+.read-more {
+  width: 40%;
+}
+
+.information {
+  display: flex;
+  align-items: center;
+}
+
+.information img {
+  width: 35%;
+  height: auto;
 }
