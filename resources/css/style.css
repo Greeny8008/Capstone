@@ -103,3 +103,30 @@ span {
   width: 35%;
   height: auto;
 }
+
+/*Course Section*/
+
+.start-learning {
+  display: block;
+  justify-content: center;
+  width: auto;
+}
+
+.courses {
+  display: flex;
+  padding: 2rem 4.5rem;
+  flex-wrap: wrap;
+  width: 100%
+
+
+}
+
+.course img {
+  width: 10rem;
+  height: auto;
+}
+
+.course {
+ padding: 2rem;
+ display: inline-block;
+}
