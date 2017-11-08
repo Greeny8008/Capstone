@@ -15,8 +15,9 @@ display: block;
 }
 
 a {
-  color: blue;
+  color: #000;
   text-decoration: none;
+  position: relative;
 }
 
 /*Header/Nav*/
@@ -33,12 +34,42 @@ header {
   align-items: center;
   padding-left: 1.5rem;
   flex-grow: 1;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+}
+
+span .grey {
+  color: #7F9493;
+  font-weight: 400;
 }
 
 nav {
   display: flex;
   justify-content: flex-end;
   padding-right: 1.5rem;
+}
+
+nav a:hover {
+  color: #00A884;
+  transition: all 300ms ease-in;
+}
+
+nav a:before {
+content: "";
+position: absolute;
+width: 100%;
+height: 1px;
+bottom: 0;
+left: 0;
+background-color: #00A884;
+visibility: hidden;
+transform: scaleX(0);
+transition: all 300ms ease-in-out;
+}
+
+nav a:hover:before {
+ visibility: visible;
+ transform: scaleX(1);
 }
 
 span {
@@ -52,56 +83,145 @@ span {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: darkgrey;
+  background-color: #C7D2D4;
 }
-
 
 .banner-img {
   width: 60%;
-  padding: 2rem 1.5rem;
 }
 
 .banner img {
   width: 100%;
+  padding: 2rem 1.5rem 2rem 1.5rem;
 }
 
-.btn {
-   background-color: black;
+.tagline {
+  padding: 0 3rem 1rem 5rem;
+  width: 40%;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding-bottom: 1.1rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: #4B4F4F;
+  font-weight: 600;
+}
+
+.banner h2 {
+  padding-bottom: 1.1rem;
+}
+
+
+
+.btn a {
+   background-color: #00A884;
    padding: 0.5rem 5rem;
    color: white;
+   box-shadow: 0.5rem 0.5rem 1rem #006E56;
 }
 
+.btn a:hover {
+  background-color: #006E56;
+  transition: all 200ms ease-in;
+}
+
+.btn a:active {
+  top: 0.2rem;
+  transition: all 100ms ease-in;
+}
 /*First Content Block*/
 
 .section-one {
   display: flex;
   width: 100%;
+  padding: 2rem 0;
 }
 
 /*Main-feature - within First block*/
 
 .main-feature {
   width: 60%;
+  padding: 0rem 1.5rem;
 }
 
 .main-feature img {
   width: 100%;
 }
 
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4B4F4F;
+  padding: 2rem 0 1rem 0;
+}
+
+p {
+  font-weight: 300;
+  margin: 1rem 0;
+  color: #767D7D;
+  line-height: 1.5rem;
+}
+
+.section-one span {
+  margin: 1.5rem 0 0;
+  font-weight: 300;
+  color: #4B4F4F;
+}
+
+.section-one .bottom {
+  background-color: #C7D2D4;
+}
+
 /* Side Content - within First block*/
 
 .read-more {
   width: 40%;
+  margin: 0;
+  padding: 0;
+}
+
+.read-more a:before {
+content: "";
+position: absolute;
+width: 100%;
+height: 1px;
+bottom: 0;
+left: 0;
+background-color: #00A884;
+visibility: hidden;
+transform: scaleX(0);
+transition: all 300ms ease-in-out;
+}
+
+.read-more a:hover:before {
+ visibility: visible;
+ transform: scaleX(1);
 }
 
 .information {
   display: flex;
   align-items: center;
+  border: 0.5px solid #DAE6E8;
+  margin-bottom: 0.1rem;
+  padding: 1rem;
 }
 
 .information img {
   width: 35%;
   height: auto;
+}
+
+.column {
+  padding-left: 1rem;
+}
+
+.read-more a {
+color: #00A884;
 }
 
 /*Course Section*/
@@ -110,23 +230,75 @@ span {
   display: block;
   justify-content: center;
   width: auto;
+  background-color: #C7D2D4;
+}
+
+.section-header h3 {
+  text-align: center;
 }
 
 .courses {
   display: flex;
-  padding: 2rem 4.5rem;
-
-
+  padding: 0rem 4.5rem;
 }
 
 .course img {
   height: auto;
-  flex-grow: 1;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .course {
- padding: 2rem;
+ margin: 2rem;
  display: inline-block;
- border: 1px solid black;
  width: 100%;
+ background-color: white;
+}
+
+.padding {
+  padding: 0 1rem;
+}
+
+/* Thesis Section*/
+
+.thesis-exhibit {
+  display: flex;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.thesis-exhibit video {
+  margin-bottom: 1.5rem;
+}
+
+.thesis-exhibit .top {
+  background-color: #C7D2D4;
+}
+
+/*footer*/
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  align-items: center;
+  border: 0.5px solid #DAE6E8;
+}
+
+footer span {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  flex-grow: 1;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1.5rem;
 }
