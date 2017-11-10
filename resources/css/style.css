@@ -339,7 +339,7 @@ footer span {
 }
 
 @media only screen and (max-width:800) {
-  
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -393,4 +393,44 @@ footer span {
   padding: 0.7rem 9rem;
   box-shadow: none;
 }
+
+/*Section One*/
+
+.section-one {
+  padding: 1rem 1rem;
+}
+.main-feature {
+  display: none;
+}
+.read-more {
+  width: 100%;
+}
+
+.information {
+  border:0;
+  display: block;
+  padding:0;
+}
+
+.information img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.column {
+  padding: 4rem 1rem;
+}
+
+.section-one .middle {
+  border-top: 0.5px solid #DAE6E8;
+  border-bottom: 0.5px solid #DAE6E8;
+
+}
+
+.section-one .bottom {
+  background-color: #fff;
+}
+
 }
