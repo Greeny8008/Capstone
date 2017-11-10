@@ -335,8 +335,8 @@ footer span {
   padding-right: 1.5rem;
 }
 
-@media only screen and (min-width: 401px) and (max-width:800px) {
-   /* ruleset for 400px - 800px */
+@media only screen and (min-width: 481px) and (max-width:800px) {
+   /* ruleset for 401px - 800px */
 
    .desktop, .title {
      display: none;
@@ -355,7 +355,7 @@ footer span {
    display: inline-flex;
    }
 
-   /*Mobile Banner*/
+   /*401-800 Banner*/
 
    .banner {
    display: block;
@@ -391,10 +391,37 @@ footer span {
    box-shadow: none;
    }
 
+   /*Course 401-800px*/
+
+   .course {
+     width: 100%;
+   }
+
+   /*Thesis 401-800px*/
+
+   .thesis-exhibit .read-more {
+     display: none;
+   }
+
+   .thesis-exhibit .main-feature {
+     width: 100%;
+     padding: 0;
+   }
+
+   video {
+     width: 100%;
+   }
+
+   .thesis-exhibit .main-feature h2, .thesis-exhibit .main-feature p {
+     padding: 0 1.5rem;
+   }
+
+
+
 
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
 
   /*Mobile Nav Bar*/
 
