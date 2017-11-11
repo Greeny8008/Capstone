@@ -201,8 +201,9 @@ p {
   color: #4B4F4F;
 }
 
-.section-one .bottom {
+.section-one .information:hover{
   background-color: #C7D2D4;
+  transition: all 200ms ease-in-out
 }
 
 /* Side Content - within First block*/
@@ -313,8 +314,9 @@ color: #00A884;
 
 }
 
-.thesis-exhibit .top {
+.thesis-exhibit .information:hover {
   background-color: #C7D2D4;
+  transition: all 200ms ease-in-out;
 }
 
 /*footer*/
@@ -560,6 +562,11 @@ footer span {
   display: block;
 }
 
+.section-one .information:hover{
+  background-color: #fff;
+}
+
+
 /* Start Learning Section*/
 
 .start-learning {
@@ -582,7 +589,16 @@ footer span {
   background-color: #00A884;
   margin: 0.5rem;
   font-size: 1.5rem;
-  color: #4B4F4F;
+}
+
+.mobile-course-list ul a {
+  color: #fff;
+}
+
+.mobile-course-list ul a:hover {
+  text-decoration: underline;
+  font-size: 1.6rem;
+  transition: all 200ms ease-in;
 }
 
 /*thesis-exhibit*/
@@ -610,4 +626,18 @@ video {
   display: none;
 }
 
+}
+
+@media only screen and (min-width: 995px) {
+  .course:hover {
+    width: 27%;
+    transition: all 500ms ease-in-out;
+    
+  }
+}
+
+@media only screen and (max-width: 903px) and (min-width:800px) {
+  .course {
+    width: 40%;
+  }
 }
