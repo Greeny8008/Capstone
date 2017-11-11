@@ -213,6 +213,11 @@ p {
   padding: 0;
 }
 
+i {
+  padding-left: 0.3rem;
+  color: #00A884;
+}
+
 .read-more a:before {
 content: "";
 position: absolute;
@@ -250,6 +255,10 @@ transition: all 300ms ease-in-out;
 
 .read-more a {
 color: #00A884;
+}
+
+#mobile-img {
+  display: none;
 }
 
 /*Course Section*/
@@ -391,6 +400,30 @@ footer span {
    box-shadow: none;
    }
 
+   /*Section one*/
+
+   .section-one {
+     display: block;
+   }
+
+   .main-feature {
+     width: 100%;
+     padding: 0;
+     text-align: center;
+   }
+
+   .read-more {
+     width: 100%;
+   }
+
+   .section-one .bottom {
+     background-color: #fff;
+   }
+
+   .tablet-padding {
+     padding: 0 1rem;
+   }
+
    /*Course 401-800px*/
 
    .course {
@@ -519,6 +552,14 @@ footer span {
   background-color: #fff;
 }
 
+.section-one img {
+  display: none;
+}
+
+#mobile-img, #mobile-img img{
+  display: block;
+}
+
 /* Start Learning Section*/
 
 .start-learning {
@@ -538,7 +579,7 @@ footer span {
 
 .mobile-course-list ul li {
   padding: 1.5rem;
-  background-color: #C7D2D4;
+  background-color: #00A884;
   margin: 0.5rem;
   font-size: 1.5rem;
   color: #4B4F4F;
